@@ -1,0 +1,32 @@
+{
+  "name": "simple-extend",
+  "version": "0.1.0",
+  "description": "A simple 'extend' helper, adapted from the Backbone.js library.",
+  "main": "simple-extend.js",
+  "scripts": {
+    "test": "mocha -R spec test/index.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": ">=2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tgriesser/simple-extend.git"
+  },
+  "keywords": [
+    "class",
+    "extend"
+  ],
+  "author": {
+    "name": "Tim Griesser",
+    "web": "https://github.com/tgriesser"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1"
+  }
+}
