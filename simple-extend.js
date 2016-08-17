@@ -1,7 +1,7 @@
 // simple-extend.js 0.1.0
 // A simple 'extend' helper, adapted from the Backbone.js library.
 // http://github.com/tgriesser/simple-extend
-var _ = require('lodash');
+var assignIn = require('lodash.assignin');
 
 // Shared empty constructor function to aid in prototype-chain creation.
 var ctor = function() {};
@@ -23,7 +23,7 @@ module.exports = function(protoProps, staticProps) {
   }
 
   // Inherit class (static) properties from parent.
-  _.extend(child, parent);
+  assignIn(child, parent);
 
   // Set the prototype chain to inherit from `parent`, without calling
   // `parent`'s constructor function.
@@ -32,10 +32,10 @@ module.exports = function(protoProps, staticProps) {
 
   // Add prototype properties (instance properties) to the subclass,
   // if supplied.
-  if (protoProps) _.extend(child.prototype, protoProps);
+  if (protoProps) assignIn(child.prototype, protoProps);
 
   // Add static properties to the constructor function, if supplied.
-  if (staticProps) _.extend(child, staticProps);
+  if (staticProps) assignIn(child, staticProps);
 
   // Correctly set child's `prototype.constructor`.
   child.prototype.constructor = child;

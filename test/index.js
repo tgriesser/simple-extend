@@ -1,6 +1,5 @@
 var chai   = require('chai');
 var expect = chai.expect;
-var _      = require('lodash');
 var extend = require('../simple-extend');
 
 describe('extend', function () {

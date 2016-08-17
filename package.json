@@ -1,6 +1,6 @@
 {
   "name": "simple-extend",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple 'extend' helper, adapted from the Backbone.js library.",
   "main": "simple-extend.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "test"
   },
   "dependencies": {
-    "lodash": ">=2.0.0"
+    "lodash.assignin": ">=4.2.0"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
     "name": "Tim Griesser",
     "web": "https://github.com/tgriesser"
   },
+  "contributors": [{
+  	"name": "James Ballantine",
+  	"url": "https://github.com/jballant"
+  }], 
   "license": "MIT",
   "devDependencies": {
     "mocha": "~1.14.0",
